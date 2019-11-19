@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bd.entity.BlogClassifyListEntity" table="blog_classify_list" schema="blog" lazy="false">
+        <id name="id">
+            <column name="id" sql-type="int(10)"/>
+            <generator class="native"/>
+        </id>
+        <property name="name">
+            <column name="name" sql-type="varchar(32)" length="32" not-null="false"/>
+        </property>
+        <many-to-one name="blogMng" class="com.bd.entity.BlogMngEntity">
+            <column name="bmId" not-null="false"/>
+        </many-to-one>
+        <set name="blogArticles" inverse="true">
+            <key>
+                <column name="bclId" not-null="false"/>
+            </key>
+            <one-to-many class="com.bd.entity.BlogArticleEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>

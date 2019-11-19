@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/BlogMng.css"/>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/test.js" type="text/javascript"></script>
+    <link type="text/css" rel="stylesheet" href="css/test.css"/>
+</head>
+
+<body>
+<div class="navigation"> <!--导航-->
+    <div class="navigatLeft">
+        <ul>
+            <li><a href="list" title="首页图片"><img src="images/ico.jpg"/></a></li>
+            <li><a href="list" title="首页" style="margin-left:0px">首页</a></li>
+            <li><a href="" title="博客">博客</a></li>
+            <li><a href="" title="下载">下载</a></li>
+            <li><a href="" title="APP">APP</a></li>
+            <li><a href="" title="专题">专题</a></li>
+            <li><a href="" title="招聘">招聘</a></li>
+            <li><a href="" title="课程">课程</a></li>
+            <li><a href="" title="GitHub">GitHub</a></li>
+            <li>
+                <div class="navigatLeftSearch">
+                    <input type="text" class="inputSearch" name="search" id="search" placeholder="搜索"/>
+                    <a href="">
+                        <img src="images/search.jpg" class="icoSearch"/>
+                    </a>
+                </div>
+            </li>
+            <li class="writeBlog">
+                <a href="WriteBlog.jsp" title="writeBlog">
+                    <img src="images/write_blog.jpg"/>
+                    <span>写博客</span>
+                </a>
+            </li>
+            <li class="message">
+                <a href="" title="message">
+                    <img src="images/message.jpg"/>
+                    <span>消息</span>
+                </a>
+            </li>
+            <s:if test="#session.saveUserInformationTOSession==null">
+                <li class="login_regist">
+                    <a href="Login.jsp" title="login">登陆</a>
+                    <span></span>
+                    <a href="Regist.jsp" title="regist">注册</a>
+                </li>
+            </s:if>
+            <s:else>
+                <li class="loginedUser">
+                    <div class="loginedUserBox">
+                        <a href="" class="loginedUserBoxA"><img class="loginedUserBoxAImg" src="images/defaultPic.jpg"></a>
+                    </div>
+                </li>
+            </s:else>
+        </ul>
+    </div>
+</div>
+<div class="clears"></div>
+
+<!--系统公告栏-->
+<div class="notice" style="display: true;">
+    <img src="images/notice_1.jpg" class="noticeIco_1"/><!--小喇叭-->
+    <span class="noticeText">公告：</span>
+    <span class="">
+  	<a href=""><span style="color: #CA0C16">博主每周活跃榜单首次大公开，你上榜了吗~</span></a>
+  </span>
+    <img src="images/notice_X.jpg" class="noticeIco_X"/><!--叉叉-->
+</div>
+
+<!--博客管理-->
+<div class="blogMngMain">
+    <div class="blogMngMainBox">
+        <div class="leftBox"><!--左侧box-->
+            <div class="leftGroup leftBoxLine">
+                <a href="" class="richText leftGroupItem" target=""><img src="images/write_blog.jpg" class="leftBoxIco"/>富文本编辑器</a>
+            </div>
+            <div class="leftGroup leftBoxLine">
+                <a href="" class="leftGroupItem" target="">查看主页</a>
+            </div>
+            <div class="leftGroupItem leftGroupTitle">内容</div>
+            <div class="leftGroup">
+                <a href="" class="leftGroupItem" target="">文章管理</a>
+                <a href="" class="leftGroupItem" target="">评论管理</a>
+                <a href="" class="leftGroupItem" target="">分类专栏</a>
+            </div>
+            <div class="leftGroupItem leftGroupTitle">数据</div>
+            <div class="leftGroup">
+                <a href="" class="leftGroupItem" target="">数据统计</a>
+            </div>
+            <div class="leftGroupItem leftGroupTitle">设置</div>
+            <div class="leftGroup leftBoxLine">
+                <a href="" class="leftGroupItem" target="">博客设置</a>
+            </div>
+        </div>
+        <div class="rightBox"><!--右侧box-->
+            <div class="statusDiv"><!--文章状态-->
+                <ul class="statusUl">
+                    <li class="statusLi"><a>全部</a></li>
+                    <li class="statusLi"><a>公开</a></li>
+                    <li class="statusLi"><a>私密</a></li>
+                    <li class="statusLi"><a>审核</a></li>
+                    <li class="statusLi"><a>草稿箱</a></li>
+                    <li class="statusLi"><a>回收站</a></li>
+                </ul>
+            </div>
+
+            <div class="mainSearchBox"><!--searchBox--><!--暂做静态处理-->
+                <form action="" class="mainSearchForm">
+                    <div class="select dowebok">
+                        <span class="placeholder">年</span>
+                        <ul>
+                            <li>不限</li>
+                            <li>2019</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="select dowebok">
+                        <span class="placeholder">月</span>
+                        <ul>
+                            <li>不限</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                        </ul>
+                    </div>
+                    <div class="select dowebok">
+                        <span class="placeholder">类型</span>
+                        <ul>
+                            <li>不限</li>
+                            <li>原创</li>
+                            <li>转载</li>
+                            <li>其他</li>
+                        </ul>
+                    </div>
+                    <div class="select1 dowebok">
+                        <span class="placeholder">分类专栏</span>
+                        <ul>
+                            <li>不限</li>
+                        </ul>
+                    </div>
+                    <input class="keywordInput" id="key" type="text" name="keyword" value="" placeholder="标题关键词"/>
+                    <button type="button" class="mainSearchBtn">搜索</button>
+                    <div class="clears"></div>
+                </form>
+	
+            </div>
+
+
+            <div class="contentTab"><!--博文List-->
+                <div class="contentTabBox"><!--循环开始-->
+                    <div class="contentArticle">
+                        <div class="contentArticleTitle">
+                            <span class="contentArticleTitleTag">私密</span>
+                            <p class="contentArticleTitleTxt">
+                                <a href="" target="" title="">CSDN博客测试</a>
+                            </p>
+                        </div>
+                        <div class="contentArticleInfor">
+                            <div class="contentArticleInforLeft">
+                                <span class="">转载</span>
+                                <span class="">2019年07月14日 15:23:20</span>
+                                <span class=""><img src="images/bookIco.jpg"/>3</span>
+                                <span class=""><img src="images/commentIco.jpg"/>0</span>
+                            </div>
+                            <div class="contentArticleInforRight">
+                                <a href="" target="_blank"><span class="">查看</span></a>
+                                <a href="javascript:void(0);" data-aid="95888689"><span class="">删除</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--循环结束-->
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

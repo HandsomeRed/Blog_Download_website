@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bd.entity.BlogArticleEntity" table="blog_article" schema="blog" lazy="true">
+        <id name="id">
+            <column name="id" sql-type="int(10)"/>
+            <generator class="native"/>
+        </id>
+        <property name="releaseTime">
+            <column name="releaseTime" sql-type="date" not-null="false"/>
+        </property>
+        <property name="modificationTime">
+            <column name="modificationTime" sql-type="date" not-null="false"/>
+        </property>
+        <property name="title">
+            <column name="title" sql-type="varchar(128)" length="128" not-null="false"/>
+        </property>
+        <property name="content">
+            <column name="content" sql-type="text" not-null="false"/>
+        </property>
+        <property name="type">
+            <column name="type" sql-type="varchar(16)" length="16" not-null="false"/>
+        </property>
+        <property name="status">
+            <column name="status" sql-type="varchar(16)" length="16" not-null="false"/>
+        </property>
+        <property name="readNum">
+            <column name="readNum" sql-type="int(12)" not-null="false"/>
+        </property>
+        <property name="likeNum">
+            <column name="likeNum" sql-type="int(12)" not-null="false"/>
+        </property>
+        <many-to-one name="blogMng" class="com.bd.entity.BlogMngEntity" cascade="save-update">
+            <column name="bmId" not-null="false"/>
+        </many-to-one>
+        <many-to-one name="blogClassify" class="com.bd.entity.BlogClassifyEntity" cascade="save-update">
+            <column name="bcId" not-null="false"/>
+        </many-to-one>
+        <many-to-one name="blogClassifyList" class="com.bd.entity.BlogClassifyListEntity">
+            <column name="bclId" not-null="false"/>
+        </many-to-one>
+        <many-to-one name="columnList" class="com.bd.entity.ColumnListEntity">
+            <column name="clId" not-null="false"/>
+        </many-to-one>
+        <set name="comments" inverse="true">
+            <key>
+                <column name="baId" not-null="false"/>
+            </key>
+            <one-to-many class="com.bd.entity.CommentEntity"/>
+        </set>
+        <set name="favorite" inverse="true">
+            <key>
+                <column name="baId" not-null="false"/>
+            </key>
+            <one-to-many class="com.bd.entity.FavoriteBlogEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>

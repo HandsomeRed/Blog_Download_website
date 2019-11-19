@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/public.css">
+<link rel="stylesheet" type="text/css" href="css/BlogPerson.css">
+</head>
+
+<body>
+<div class="navigation"> <!--导航-->
+	<div class="navigatLeft">
+    	<ul>
+        	<li><a href="list" title="首页图片"><img src="images/ico.jpg"/></a></li>
+            <li><a href="list" title="首页" style="margin-left:0px">首页</a></li>
+            <li><a href="" title="博客">博客</a></li>
+            <li><a href="" title="下载">下载</a></li>
+            <li><a href="" title="APP">APP</a></li>
+            <li><a href="" title="专题">专题</a></li>
+            <li><a href="" title="招聘">招聘</a></li>
+            <li><a href="" title="课程">课程</a></li>
+            <li><a href="" title="GitHub">GitHub</a></li>
+            <li>
+            	<div class="navigatLeftSearch">
+                	<input type="text" class="inputSearch" name="search" id="search" placeholder="搜索"/>
+                    <a href="">
+                    	<img  src="images/search.jpg" class="icoSearch"/>
+                    </a>
+                </div>
+            </li>
+            <li class="writeBlog">
+            	<a href="WriteBlog.jsp" title="writeBlog">
+                	<img src="images/write_blog.jpg"/>
+                    <span>写博客</span>
+                </a>
+            </li>
+            <li class="message">
+            	<a href="" title="message">
+                	<img src="images/message.jpg" />
+                    <span>消息</span>
+                </a>
+            </li>
+            <s:if test="#session.saveUserInformationTOSession==null">
+            	<li class="login_regist">
+            		<a href="Login.jsp" title="login">登陆</a>
+             	   <span></span>
+             	   <a href="Regist.jsp" title="regist">注册</a>
+            	</li>
+            </s:if>
+            <s:else>
+            	<li class="loginedUser">
+            		<div class="loginedUserBox">
+                    	<a href="" class="loginedUserBoxA"><img class="loginedUserBoxAImg" src="images/defaultPic.jpg"></a>
+                    </div>
+            	</li>
+            </s:else>
+        </ul>
+    </div>
+</div>
+<div class="clears"></div>
+<div class="banner">
+	<div class="container">
+    	<div class="title">
+        	<h1 class="title_blog">
+            	<a href="" class="a_text_white">沉默王者</a>
+            </h1>
+            <p class="description">一个有趣的程序员，带你突围职场蜕变</p>
+        </div>
+    </div>
+
+</div>
+<div class="content" id="">
+	
+    <div class="leftBox left" style="width:300px"><!--左侧框体-->
+            <div class="authorInforBox"><!--作者信息框体-->
+                <div class="authorInforUpBox"><!--上层-->
+                    <div class="authorPic"><!--头像-->
+                        <a><img src="images/defaultPic.jpg"/></a>
+                    </div>
+                    <div class="authorInfor"><!--用户名-->
+                        <p><a class="authorName">LIBD</a></p>
+                        <p><a class="homePage">TA的个人主页</a></p>
+                    </div>
+                    <div class="guanzhuBtnBox"><!--关注按钮-->
+                        <span>
+                    	<a class="guanzhuBtn">关注</a>
+                    </span>
+                    </div>
+                </div>
+                <div class="authorInforMiddleBox"><!--中层-->
+                    <dl class="MiddleBoxDl" title="">
+                        <dt class="authorInforText"><a>原创</a></dt>
+                        <dt><a><span class="authorInforNum">1234</span></a></dt>
+                    </dl>
+                    <dl class="MiddleBoxDl" title="">
+                        <dt class="authorInforText">粉丝</dt>
+                        <dd><span class="authorInforNum">3万+</span></dd>
+                    </dl>
+                    <dl class="MiddleBoxDl" title="">
+                        <dt class="authorInforText">喜欢</dt>
+                        <dd><span class="authorInforNum">3万+</span></dd>
+                    </dl>
+                    <dl class="MiddleBoxDl" title="">
+                        <dt class="authorInforText">评论</dt>
+                        <dd><span class="authorInforNum">1万+</span></dd>
+                    </dl>
+                </div>
+                <div class="clears"></div>
+                <div class="authorInforDownBox">
+                    <div class="authorInforDown">
+                        <dl>
+                            <dt>等级：</dt>
+                            <dd>Lv10</dd>
+                        </dl>
+                        <dl>
+                            <dt>访问：</dt>
+                            <dd title="">1084万+</dd>
+                        </dl>
+                        <dl>
+                            <dt>积分：</dt>
+                            <dd title="">13万+</dd>
+                        </dl>
+                        <dl title="">
+                            <dt>排名：</dt>
+                            <dd>5</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!--以下为左侧自定义框体-->
+        </div>
+    
+    
+    <div class="main left">
+   		<div class="filter_box ">
+    		<table width="700" border="0">
+  				<tr>
+    				<td width="100">
+                    	<form action="" id="Original">
+            				<label class="ck_box" for="ckOriginal">
+            					<input onChange="" type="checkbox" id="">只看原创
+                            </label>
+        				</form>
+                    </td>
+					<td width="20">排序</td>
+    				<td width="10"><a href="">默认</a></td>
+    				<td width="40"><a href="">按更新间</a></td>
+    				<td width="40"><a href="">按访问量</a></td>
+    				<td width="40"><a href="">RSS订阅</a></td>
+  				</tr>
+			</table>
+        </div>
+        
+		<div class="article-list left">
+            <div class="articleBox">
+            	<h4>
+            		<a href="" class="a_text_black">
+            			<span class="article_type">原</span>
+            			你为什么成为程序员？
+            		</a>
+            	</h4>
+            	<div class="cnt">
+            		<a href="" class="a_text_black">
+            			你还记得自己成为一名程序员的初心吗？遥想公瑾当年，不，遥想我当年,似乎是命中注定...
+            		</a>
+            	</div>
+
+                <div class="info_box">
+                	<span><span class="date">2019-09-03 08:05:26</span></span>
+                    <span class="point"></span>
+                    <span><span class="reead_num">阅读数  </span><span class="num">20</span></span>
+                    <span class="point"></span>
+                    <span><span class="reead_num">评论数  </span><span class="num">3</span></span>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="clears"></div>
+</div>
+
+</body>
+</html>

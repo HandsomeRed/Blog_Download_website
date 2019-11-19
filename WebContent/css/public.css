@@ -1,0 +1,21 @@
+/* CSS Document */
+*{ margin:0px; padding:0px; margin-left:auto; margin-right:auto;
+font-size:14px;}/*所有标签均执行*/
+
+/*清除浮动*/
+.clears{
+		clear:both;/*清除浮动*/
+		height:0px;/*标签高度为0*/
+		line-height:0px;/*文本行高为0*/
+		overflow:hidden;/*超出隐藏*/
+		font-size:0px;/*字体大小为0*/
+	}
+.left{ float:left;}/*左浮动*/
+.right{ float:right;}/*右浮动*/
+a{ text-decoration:none; cursor:pointer;}/*清除a标签下划线*/
+ul,li,ol{ list-style:none;}/*清除列表样式*/ /*ol有序列表 ul无序列表 li列表项*/
+dd, dl, dt, form {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,151 @@
+/* CSS Document */
+.frame{
+	height:400px;
+	width:1000px;
+	}
+	
+.leftFrame{
+	float:left;
+	width:500px;
+	height:500px;
+	position:relative;
+
+	
+	}
+
+.login{
+	float:right;
+	width:450px;
+	height:500px;
+	position:relative;
+	border:1px solid #999;
+	box-shadow:0 1px 1px rgba(0,0,0,.1);
+	}
+	
+.form{
+	width:285px;
+	height:230px;
+	font-size:14px;
+	line-height:1.5;
+	}
+	
+.tab{
+	width:255px;
+	height:35px;
+	margin-top:70px;
+	margin-bottom:25px;
+	}
+
+.tab_1{
+	float:left;
+	border:none;
+	border-bottom-width:2px;
+	border-bottom-color:#ca0c16;
+	boder-bottom-style:solid;
+	padding-top:0px;
+	padding-right:30px;
+	padding-bottom:0px;
+	padding-left:30px;
+	font-size:16px;
+	color:#4d4d4d;
+	}
+
+.tab_2{
+	float:right;
+	padding-top:0px;
+	padding-right:30px;
+	padding-bottom:0px;
+	padding-left:30px;
+	font-size:16px;
+	color:#4d4d4d;
+	}
+	
+.accountTab{
+	width:255px;
+	margin-bottom:16px;
+	box-sizing:border-box;
+	}
+
+.account{
+	position:relative;
+	}
+
+.accInput{
+	padding-right:10%;
+	line-height:100%;
+	display:block;
+	width:100%;
+	height:36px;
+	padding:8px;
+	border-radius:4px 4px;
+	font-size:16px;
+	color:#4d4d4d;
+	border:1px solid #ccc;
+	background-color:#fff;
+	background-image:none;
+	}
+
+.passwordTab{
+	width:255px;
+	margin-bottom:16px;
+	box-sizing:border-box;
+	}
+
+.password{
+	position:relative;
+	}
+	
+.pwdInput{
+	padding-right:10%;
+	line-height:100%;
+	display:block;
+	width:100%;
+	height:36px;
+	padding:8px;
+	border-radius:4px 4px;
+	font-size:16px;
+	color:#4d4d4d;
+	border:1px solid #ccc;
+	background-color:#fff;
+	background-image:none;
+	}
+	
+.forgetpwd{
+	float:right;
+	margin-right:16px;
+	}
+	
+.error{
+	float:left;
+	width:180px;
+	height:36px;
+	margin-left:16px;
+	color:red;
+	}
+	
+.loginButton{
+	width:255px;
+	margin-top:35px;
+	}
+
+.btn{
+	width:100%;
+	color:#fff;
+	background-color:#ca0c16;
+	border-color:transparent;
+	display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    background-image: none;
+    white-space: nowrap;
+    cursor: pointer;
+    touch-action: manipulation;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    height: 37px;
+    line-height: 1.5;
+    border-radius: 4px 4px;
+    user-select: none;
+	}

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bd.entity.BlogClassifyEntity" table="blog_classify" schema="blog" lazy="false">
+        <id name="id">
+            <column name="id" sql-type="int(10)"/>
+            <generator class="native"/>
+        </id>
+        <property name="name">
+            <column name="name" sql-type="varchar(32)" length="32"/>
+        </property>
+        <set name="blogArticles" inverse="true" cascade="all">
+            <key>
+                <column name="bcId"/>
+            </key>
+            <one-to-many class="com.bd.entity.BlogArticleEntity"/>
+        </set>
+        <set name="columnLists" inverse="true">
+            <key>
+                <column name="bcId"/>
+            </key>
+            <one-to-many class="com.bd.entity.ColumnListEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>

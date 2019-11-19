@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bd.entity.ResourceMngEntity" table="resource_mng" schema="blog" lazy="true">
+        <id name="id">
+            <column name="id" sql-type="int(10)"/>
+            <generator class="native"/>
+        </id>
+        <property name="lv">
+            <column name="lv" default="1" sql-type="int(11)"/>
+        </property>
+        <property name="uploadLimit">
+            <column name="uploadLimit" default="10" sql-type="int(11)"/>
+        </property>
+        <property name="rank">
+            <column name="rank" sql-type="int(12)" default="-1"/>
+        </property>
+
+        <!--  <one-to-one name="user" class="com.bd.entity.UserEntity" cascade="all"/>-->
+		<many-to-one name="user" class="com.bd.entity.UserEntity" cascade="save-update">
+			<column name="uId" not-null="false" />
+		</many-to-one>
+		
+        <set name="favoriteResources" inverse="true">
+            <key>
+                <column name="rmId"/>
+            </key>
+            <one-to-many class="com.bd.entity.FavoriteResourceEntity"/>
+        </set>
+        <set name="resources" inverse="true" cascade="all">
+            <key>
+                <column name="rmId"/>
+            </key>
+            <one-to-many class="com.bd.entity.ResourceEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>

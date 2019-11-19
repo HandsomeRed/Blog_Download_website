@@ -1,0 +1,178 @@
+@import "http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css";
+
+html {
+    box-sizing: inherit;
+    background-color: #8e9eab;
+    background: linear-gradient(to left, #8e9eab, #eef2f3);
+}
+
+body {
+    font-size: 12px;
+}
+
+.select {
+	margin-right:35px;
+	float:left;
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 74px;
+    color: #666;
+    vertical-align: middle;
+    text-align: left;
+    user-select: none;
+	border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+
+.select .placeholder {
+    position: relative;
+    display: block;
+    background-color: #FFF;
+    z-index: 1;
+    padding: 1em;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.select .placeholder:hover {
+    background: #CCC;
+}
+
+.select .placeholder:after {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'FontAwesome';
+    content: '\f078';
+    z-index: 10;
+}
+
+.select.is-open .placeholder:after {
+    content: '\f077';
+}
+
+.select.is-open ul {
+    display: block;
+}
+
+.select.select--white .placeholder {
+    background: #fff;
+    color: #999;
+}
+
+.select.select--white .placeholder:hover {
+    background: #fafafa;
+}
+
+.select ul {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+    z-index: 100;
+}
+
+.select ul li {
+    display: block;
+    text-align: left;
+    padding: 0.8em 1em 0.8em 1em;
+    color: #999;
+    cursor: pointer;
+}
+
+.select ul li:hover {
+    background: #4ebbf0;
+    color: #fff;
+}
+
+.select1 {
+	float:left;
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    color: #666;
+    vertical-align: middle;
+    text-align: left;
+    user-select: none;
+	border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+
+.select1 .placeholder {
+    position: relative;
+    display: block;
+    background-color: #FFF;
+    z-index: 1;
+    padding: 1em;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.select1 .placeholder:hover {
+    background: #CCC;
+}
+
+.select1 .placeholder:after {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'FontAwesome';
+    content: '\f078';
+    z-index: 10;
+}
+
+.select1.is-open .placeholder:after {
+    content: '\f077';
+}
+
+.select1.is-open ul {
+    display: block;
+}
+
+.select1.select--white .placeholder {
+    background: #fff;
+    color: #999;
+}
+
+.select1.select--white .placeholder:hover {
+    background: #fafafa;
+}
+
+.select1 ul {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+    z-index: 100;
+}
+
+.select1 ul li {
+    display: block;
+    text-align: left;
+    padding: 0.8em 1em 0.8em 1em;
+    color: #999;
+    cursor: pointer;
+}
+
+.select1 ul li:hover {
+    background: #4ebbf0;
+    color: #fff;
+}

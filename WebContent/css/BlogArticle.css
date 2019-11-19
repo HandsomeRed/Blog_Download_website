@@ -1,0 +1,272 @@
+/* CSS Document */
+.MainBox {
+    padding: 8px 0 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 1112px;
+}
+
+.main {
+    width: 760px;
+    display: block;
+    float: right;
+    margin-bottom: 40px;
+}
+
+.blogContentBox {
+    position: relative;
+    padding: 0 24px 16px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.blogHeadBox {
+    border-bottom: 1px solid #e0e0e0;
+    padding-top: 16px;
+    z-index: 9;
+    background-color: #fff;
+}
+
+.blogTitle {
+    margin-bottom: 8px;
+}
+
+.blogTitle > span {
+    float: left;
+    margin-right: 8px;
+    margin-top: 4px;
+    color: #ca0c16;
+    border: 1px solid #f4ced0;
+    display: inline-block;
+    margin-top: 4px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 50%;
+}
+
+.blogTitle > h1 {
+    float: left;
+    font-size: 28px;
+    word-wrap: break-word;
+}
+
+.blogInfor {
+    margin-top: 5px;
+    padding-bottom: 14px;
+    position: relative;
+    color: #858585;
+    width: 88%;
+    height: 24px;
+    overflow: hidden;
+}
+
+.blogInfor > span {
+    margin-right: 14px;
+}
+
+.blogInfor > a {
+    color: #78a5f1;
+    margin-right: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.blogArticle {
+    position: relative;
+    padding-top: 16px;
+}
+
+.articleContent {
+    height: 50px;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 16px;
+}
+
+.articleContent > span {
+    color: #4d4d4d;
+    word-break: break-all;
+    vertical-align: text-bottom;
+}
+
+.linkBox {
+    color: #4d4d4d;
+}
+
+.link {
+    font-size: 14px;
+    color: #3399ea;
+}
+
+.blogContent {
+    position: relative;
+    min-height: 70px;
+    word-wrap: break-word;
+}
+
+.leftBox {
+    float: left;
+    display: block;
+    width: 300px;
+}
+
+.authorInforBox {
+    margin-bottom: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.authorInforUpBox {
+    padding: 16px 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.authorPic {
+    float: left;
+    position: relative;
+    width: 48px;
+    height: 48px;
+}
+
+.authorPic > a {
+    color: #333;
+    cursor: pointer;
+}
+
+.authorPic > a > img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.authorInfor {
+    margin-left: 10px;
+    width: 156px;
+    height: 53px;
+    position: relative;
+}
+
+.authorName {
+    margin-top: 9px;
+    margin-left: 10px;
+    text-align: center;
+    display: inline-block;
+    color: #3d3d3d;
+    font-weight: 700;
+    max-width: 150px;
+    max-height: 66px;
+    overflow: hidden;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.homePage {
+    width: 90px;
+    height: 17px;
+    position: absolute;
+    text-align: right;
+    right: -110px;
+    bottom: 4px;
+    font-size: 12px;
+    color: #3399ea;
+    line-height: 17px;
+    cursor: pointer;
+}
+
+.guanzhuBtnBox {
+    float: right;
+    width: 56px;
+    height: 34px;
+    margin-top: -55px;
+}
+
+.guanzhuBtn {
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    width: 56px;
+    height: 28px;
+    min-width: auto;
+    font-size: 12px;
+    line-height: 28px;
+    cursor: pointer;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
+    color: #ca0c16;
+    border: 1px solid #ca0c16;
+    background-color: #fff;
+    transition: background-color 0.1s;
+}
+
+.guanzhuBtn:hover {
+    background: #FFD0D0;
+}
+
+.authorInforMiddleBox {
+    display: flex;
+    padding: 16px 10px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.MiddleBoxDl {
+    text-align: center;
+    width: 100%;
+}
+
+.MiddleBoxDl > dt > a {
+    cursor: pointer;
+}
+
+.authorInforText {
+    font-size: 14px;
+}
+
+.authorInforNum {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.authorInforDownBox {
+    height: 70px;
+    margin-top: -6px;
+    padding: 16px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.authorInforDown {
+    margin-left: 7px;
+}
+
+.authorInforDownBox > div > dl {
+    float: left;
+    margin-top: 8px;
+    width: 50%;
+}
+
+.authorInforDownBox > div > dl > dt {
+    float: left;
+    display: inline;
+    width: 50px;
+}
+
+.authorInforDownBox > div > dl > dd {
+    float: left;
+    display: inline;
+}
+
+.authorInforDownBox > a {
+    color: #333;
+    cursor: pointer;
+
+}

@@ -1,0 +1,649 @@
+/* CSS Document */
+body{ 
+	background:#f5f6f7;
+}
+
+.navigation{
+	height:40px;
+	background:#fff;
+	color:#333;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+	padding: 0 28px 0 17px;
+	
+	}
+
+.navigatLeft{
+	width: 1200px;
+    margin: 0px auto;
+	padding:0px;
+	}
+
+.navigatLeft>ul{
+	margin-left: -12px;
+	margin:0px;
+	padding:0px;
+	height:100%;
+	}
+
+.navigatLeft>ul>li:first-child>a{
+	float:left;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 90px;
+    height: 40px;
+	}
+
+.navigatLeft>ul>li>a{
+	float:left;
+	display: block;
+    margin-left: 6px;
+    margin-right: 6px;
+    height: 38px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #3D3D3D;
+	}
+
+.navigatLeftSearch {
+	margin-left:100px;
+	float:left;
+    width: 180px;
+    height: 26px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+	margin-top:6px; 
+	}
+
+.inputSearch{
+	font-size: 14px;
+    color: #999;
+    display: block;
+    float: left;
+    width: 150px;
+    padding: 4px 0 4px 7px;
+    border: 0;
+    height: 18px;
+    border-radius: 10px;
+    background: 0 0;
+	}
+
+.icoSearch{
+	height:18px;
+	width:18px;
+	margin-top:4px;
+	}
+
+.loginedUserBox {
+    float: left;
+    margin-top: 5px;
+    margin-left: -5px;
+    line-height: 27px;
+    position: relative;
+    width: 25px;
+    height: 30px;
+    padding: 2px 10px 2px 14px;
+}
+
+.loginedUserBoxA {
+    padding-left: 0;
+    padding-right: 0;
+    width: 25px;
+    height: 24px;
+    display: inline-block;
+}
+
+.loginedUserBoxAImg {
+    color: #D4D4D4;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #eee;
+}
+
+.news_nav {
+    background: #e4e9ec;
+    margin-bottom: 9px;
+    height: 40px;
+    clear: both;
+    overflow: visible;
+    font-size: 15px;
+    color: #1f1f1f;
+    line-height: 20px;
+}
+.news_nav .container {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0;
+}
+
+.nav_bar {
+    position: relative;
+    font-size: 16px;
+    float: left;
+}
+
+.search-download {
+    float: right;
+    margin-top: 8px;
+}
+
+.nav_bar a {
+    display: inline-block;
+    line-height: 40px;
+    margin-right: 16px;
+    font-size: 14px;
+    color: #1f1f1f;
+    text-decoration: none;
+}
+
+.nav_bar .hot_text {
+    position: absolute;
+    left: 586px;
+    top: -1px;
+    z-index: 100;
+    font-size: 12px;
+    color: red;
+    transform: scale(.583);
+}
+.search_download {
+    float: right;
+    margin-top: 8px;
+}
+.meeting_main {
+    width: 1200px;
+    margin: 8px auto;
+}
+.libd_dl_bread {
+    color: #666;
+    margin-bottom: 10px;
+}
+.container {
+    padding-left: 0;
+    padding-right: 0;
+	margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 992px)
+.container {
+    width: 970px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.libd_dl_bread a {
+    color: #666;
+}
+.download_new {
+    position: relative;
+}
+
+#detail_down_l, .download_l, .public_pc_right_footer2018 {
+    position: relative;
+}
+.download_top {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 16px 16px 3px;
+}
+.download_top, .download_top_wrap {
+    position: relative;
+}
+.download_top .download_top_t .download_dl dt {
+    width: 42px;
+    float: left;
+}
+.download_top .download_top_t .download_dl dt img {
+    width: 100%;
+    height: 100%;
+    max-width: 42px;
+    max-height: 50px;
+}
+.download_top .download_top_t .download_dl dd {
+    margin-left: 60px;
+}
+.download_top .download_top_t .download_dl dd h3 span {
+    font-size: 18px;
+    color: #333;
+    display: inline-block;
+    width: 82%;
+    word-break: break-all;
+}
+.download_top .download_top_t .download_dl dd h3 .starts {
+    width: auto;
+    float: right;
+}
+.download_top .download_top_t .download_dl dd h3 span {
+    font-size: 18px;
+    color: #333;
+    display: inline-block;
+    width: 82%;
+    word-break: break-all;
+}
+.download_top .download_top_t .download_dl dd h3 .starts em {
+    margin-right: 5px;
+    color: #4d4d4d;
+    font-weight: 700;
+}
+.download_top .download_top_t .download_dl dd h3 .starts .fa-star, .download_top .download_top_t .download_dl dd h3 .starts em {
+    color: #ccc;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.download_top .download_top_t .download_dl dd h3 .starts .yellow {
+    color: #ffa300;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+}
+.download_top .download_top_t .download_dl dd h3 .starts .fa-star, .download_top .download_top_t .download_dl dt .star_box .yellow {
+    margin-right: 2px;
+}
+.download_top .download_b {
+    font-family: MicrosoftYaHei;
+    padding: 8px 0 0;
+    font-size: 14px;
+    color: #999;
+    word-break: break-all;
+    font-weight: 400;
+    line-height: 24px;
+}
+.download_top .download_b .pre_description {
+    word-break: break-all;
+    font-weight: 400;
+    max-height: 74px;
+    overflow: hidden;
+}
+.download_top .download_top_t .download_dl dd .dl_b {
+    padding: 8px 0 0;
+    font-size: 0;
+}
+.download_top .download_top_t .download_dl dd .dl_b label {
+    display: inline-block;
+    vertical-align: middle;
+}
+dd, dl, dt, label {
+    font-weight: 400;
+}
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.download_top .download_top_t .download_dl dd .dl_b label a {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 8px;
+    line-height: 22px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    color: #4d4d4d;
+    border-radius: 11px;
+    margin-right: 8px;
+    word-break: break-all;
+    text-decoration: none;
+}
+.download_top .download_top_t .download_dl dd .dl_b .size_box {
+    display: inline-block;
+    float: right;
+    font-weight: 400;
+}
+.download_top .download_top_t .download_dl dd .dl_b span {
+    font-size: 14px;
+    color: #999;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 16px;
+}
+.download_top .download_b em {
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #3399ea;
+}
+.dl_pdf {
+    position: relative;
+    padding-bottom: 10px;
+}
+.dl_download {
+    padding: 10px 0 0;
+    font-size: 0;
+    position: relative;
+}
+.dl_download .dl_download_l {
+    display: inline-block;
+}
+.dl_download .dl_download_box label {
+    color: #333;
+    margin: 0 16px 0 0;
+}
+.dl_download .dl_download_box label em {
+    font-size: 20px;
+    color: #facc16;
+}
+.dl_download .dl_download_box .open_vip, .dl_download .dl_download_box .open_vip_new {
+    background: #e33f3f;
+    color: #fff;
+    border-color: #d0011b;
+}
+.dl_download .dl_download_box a, .dl_download .dl_download_box button {
+    display: inline-block;
+    vertical-align: middle;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 30px;
+    border-radius: 4px;
+    border: 1px solid #ca0c16;
+    font-size: 16px;
+    color: #ca0c16;
+    margin-left: 8px;
+    font-weight: 700;
+    outline: 0;
+}
+.dl_download .dl_download_box .c_buy img, .dl_download .dl_download_box .c_buy span, .dl_download .dl_download_box .open_vip img, .dl_download .dl_download_box .open_vip span, .dl_download .dl_download_box .open_vip_new img, .dl_download .dl_download_box .open_vip_new span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.dl_download .dl_download_box_r {
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    font-size: 0;
+    padding-top: 8px;
+	width:225px;
+	height:34px;
+}
+.dl_download .dl_download_box_r .libd_share_btn {
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+#libd-share-btn {
+    position: relative;
+}
+.dl_download .dl_download_box_r .dl_func {
+	width:34px;
+	height:26px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #959db1;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.dl_comm .comment_t span {
+    font-size: 14px;
+    color: #999;
+    float: right;
+}
+.dl_download .dl_download_box_r .dl_func .fa {
+    font-size: 18px;
+    margin-right: 6px;
+}
+.dl_comm .comm_t .comm_list .comm_list_t .comm_list_t_r em .yellow, .dl_comm .comm_t .comm_list .comm_list_t .comm_list_t_r label .yellow, .dl_comm .comm_t .comm_list .comm_list_t .comm_list_t_r span .yellow {
+    color: #ffa300;
+}
+.dl_comm .comment_t span, .dl_comm .comment_t strong {
+    display: inline-block;
+    vertical-align: middle;
+	margin-bottom:15px;
+}
+.dl_comm .comm_t .comm_list .comm_list_t .comm_list_t_l .comm_avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-top: -4px;
+}
+.dl_comm .comm_t .comm_list .comm_list_t .comm_list_t_l .dl_user {
+    font-size: 14px;
+    color: #3d3d3d;
+    margin-left: 8px;
+}
+.dl_comm .comm_t .comm_list .comm_list_t .comm_list_t_l .comm_con {
+    width: 460px;
+    font-size: 14px;
+    color: #3d3d3d;
+	
+}
+.dl_comm {
+    background: #fff;
+    margin-top: 8px;
+    padding: 0 16px;
+}
+.dl_comm .comm_t {
+    padding: 0 0 8px;
+}
+.dl_comm .comm_t .comm_list .comm_list_t .comm_list_t_l {
+	line-height:39px;
+    width: 77%;
+}
+.dl_comm .comm_t .comm_list .comm_list_t .comm_list_t_r span {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #ccc;
+}
+.dl_comm .comm_t .comm_list .comm_reply .comm_reply_area {
+    width: 675px;
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    font-size: 14px;
+    color: #4d4d4d;
+}
+.dl_comm .comm_t .comm_list .comm_reply .comm_reply_area, .dl_comm .comm_t .comm_list .comm_reply .res_btn {
+    display: inline-block;
+    vertical-align: middle;
+    height: 52px;
+    border-radius: 4px;
+    outline: 0;
+}
+.dl_comm .comm_t .comm_list .comm_reply .res_btn {
+    width: 94px;
+    background: #ca0c16;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 4px;
+    text-align: center;
+    line-height: 52px;
+}
+.dl_comm .comm_b {
+    margin: 0 -16px;
+    padding: 14px 16px;
+    border-top: solid 1px #ececec;
+    transition: all .2s;
+}
+.dl_comm .comm_b .comm_b_l {
+    width: 32px;
+    float: left;
+}
+.dl_comm .comm_b .comm_b_l a img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.dl_comm .comm_b .comm_b_r {
+    margin-left: 40px;
+}
+.dl_comm .comm_b .comm_b_r .comm_b_b .comm_text {
+    width: 778px;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 8px;
+    outline: 0;
+    font-size: 14px;
+    color: #4d4d4d;
+}
+ul.comment_stars {
+    float: left;
+    list-style: none;
+    margin: 5px 0 0;
+    padding: 0;
+    font-size: 14px;
+}
+.mod_personal {
+    background: #fff;
+    border: 1px solid #eee;
+}
+.mod_personal .personal_wrap {
+    padding: 16px;
+    text-align: left;
+}
+.mod_personal .personal_wrap dt {
+    position: relative;
+    width: 48px;
+    float: left;
+}
+.mod_personal .personal_wrap dd {
+    padding: 0;
+    margin-left: 58px;
+    position: relative;
+}
+.mod_personal .personal_wrap dt .head {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.mod_personal .personal_wrap dd .name {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+	margin-left:0;
+    padding: 0 0 8px;
+    width: 62%;
+}
+.mod_personal .personal_wrap dd .mod_person_r {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+}
+.mod_personal .personal_wrap dd .attention_btn {
+    display: inline-block;
+    height: 28px;
+    padding: 0 15px;
+    border-radius: 3px;
+    border: 1px solid #ced2d9;
+    line-height: 26px;
+    font-size: 14px;
+    color: #d92e2e;
+    cursor: pointer;
+}
+.mod_personal .personal_wrap dd .mod_person_r .check_all {
+    padding-top: 8px;
+}
+.download_r .dl_left_box {
+    display: block;
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.04);
+    padding: 16px;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+.download_r .dl_left_box .dl_new_tit {
+    font-size: 16px;
+    color: #4a4a4a;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+.download_r .dl_left_box .dl_new_tit .line {
+    display: inline-block;
+    width: 3px;
+    height: 16px;
+    background: #cf2730;
+    overflow: hidden;
+    margin-right: 5px;
+    vertical-align: -2px;
+}
+.download_r .dl_left_box .dl_new_tit .txt {
+    font-size: 16px;
+    color: #4a4a4a;
+}
+.download_r .dl_left_box .dl_company .hot_arti_list li {
+    padding-bottom: 10px;
+}
+.download_r .dl_left_box .dl_company .hot_arti_list li h4 .article_t {
+    display: block;
+    font-size: 14px;
+    color: #3d3d3d;
+    line-height: 22px;
+    font-weight: 700;
+    word-break: break-all;
+}
+.download_r .dl_left_box .dl_company .hot_arti_list li .hot_arti_b {
+    font-size: 0;
+    padding-top: 5px;
+}
+.download_r .dl_left_box .dl_company .hot_arti_list li .hot_arti_b em, .download_r .dl_left_box .dl_company .hot_arti_list li .hot_arti_b label, .download_r .dl_left_box .dl_company .hot_arti_list li .hot_arti_b span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #999;
+}
+.download_r .dl_left_box .dl_company .hot_arti_list li .hot_arti_b span, .recom_down .recom_down_list dd em {
+    margin: 0 8px;
+}
+em, i {
+    font-style: normal;
+}
+.dl_wrap {
+    padding: 16px;
+    overflow: hidden;
+}
+.create_album_wrap, .dl_wrap {
+    border: 1px solid #eee;
+    background: #fff;
+}
+.dl_notice {
+    padding: 10px 0;
+}
+.dl_common_t {
+    height: 24px;
+    line-height: 24px;
+}
+.dl_common_t span {
+    font-size: 16px;
+    color: #4a4a4a;
+}
+.resource_c_list li .fa, .resource_c_list li a {
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    vertical-align: middle;
+}
+.resource_c_list li .fa {
+    width: 3%;
+    margin-right: 5px;
+}
+.resource_c_list li a {
+    width: 95%;
+}
+.resource_c_list li .fa, .resource_c_list li a {
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    vertical-align: middle;
+}
+.dl_download .dl_download_box a, .dl_download .dl_download_box label {
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.download_l {
+    width: 892px;
+}
+.dl_download .dl_download_box .student {
+    padding: 0 12px;
+}
+.download_r {
+    width: 300px;
+}

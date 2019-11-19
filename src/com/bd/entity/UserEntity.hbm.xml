@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.bd.entity.UserEntity" table="user" schema="blog" lazy="true">
+        <id name="id">
+            <column name="id" sql-type="int(10)"/>
+            <generator class="native"/>
+        </id>
+        <property name="account">
+            <column name="account" sql-type="varchar(16)" length="16"/>
+        </property>
+        <property name="password">
+            <column name="password" sql-type="varchar(16)" length="16"/>
+        </property>
+        <property name="name">
+            <column name="name" sql-type="varchar(10)" length="10"/>
+        </property>
+        <property name="realName">
+            <column name="realName" sql-type="varchar(16)" length="16"/>
+        </property>
+        <property name="sex">
+            <column name="sex" sql-type="varchar(4)" length="4"/>
+        </property>
+        <property name="birth">
+            <column name="birth" sql-type="date"/>
+        </property>
+        <property name="address">
+            <column name="address" sql-type="varchar(255)"/>
+        </property>
+        <property name="trade">
+            <column name="trade" sql-type="varchar(32)" length="32"/>
+        </property>
+        <property name="position">
+            <column name="position" sql-type="varchar(32)" length="32"/>
+        </property>
+        <property name="introduction">
+            <column name="introduction" sql-type="longtext"/>
+        </property>
+        <property name="registDate">
+            <column name="registDate" sql-type="date"/>
+        </property>
+        <property name="email">
+            <column name="email" sql-type="varchar(16)" length="16"/>
+        </property>
+        <property name="phone">
+            <column name="phone" sql-type="varchar(16)" length="16"/>
+        </property>
+        <property name="userPic">
+            <column name="userPic" sql-type="varchar(255)"/>
+        </property>
+        <property name="fansNum">
+            <column name="fansNum" sql-type="int(12)"/>
+        </property>
+        <property name="status">
+            <column name="status" sql-type="varchar(16)" length="16"/>
+        </property>
+        <property name="code">
+            <column name="code" sql-type="int(12)" not-null="false"/>
+        </property>
+
+
+        <set name="attentions" table="attention_fans" inverse="true">
+            <key>
+                <column name="uId"/>
+            </key>
+            <many-to-many class="com.bd.entity.UserEntity" column="targetId"/>
+        </set>
+
+        <set name="fans" table="attention_fans" inverse="true">
+            <key>
+                <column name="targetId"/>
+            </key>
+            <many-to-many column="uId" class="com.bd.entity.UserEntity"/>
+        </set>
+
+
+        <set name="details">
+            <key>
+                <column name="uId"/>
+            </key>
+            <one-to-many class="com.bd.entity.DetailEntity"/>
+        </set>
+
+        <set name="favoriteAttentions" inverse="true">
+            <key>
+                <column name="uId"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.bd.entity.FavoriteAttentionEntity"/>
+        </set>
+
+        <set name="favoriteLists" inverse="true">
+            <key>
+                <column name="uId"/>
+            </key>
+            <one-to-many class="com.bd.entity.FavoriteListEntity"/>
+        </set>
+
+        <!-- infor send and accept mapping-->
+        <set name="inforSend">
+            <key>
+                <column name="uId"/>
+            </key>
+            <one-to-many class="com.bd.entity.InformationEntity"/>
+        </set>
+        <set name="inforAccepted" inverse="true">
+            <key>
+                <column name="targetId"/>
+            </key>
+            <one-to-many class="com.bd.entity.InformationEntity"/>
+        </set>
+
+        <!-- user , blogMng   one to one -->
+        <one-to-one name="blogMng" class="com.bd.entity.BlogMngEntity" cascade="all" lazy="proxy"/>
+        <!-- user , resource one to one   -->
+        <one-to-one name="resourceMng" class="com.bd.entity.ResourceMngEntity" cascade="all"/>
+
+    </class>
+</hibernate-mapping>
