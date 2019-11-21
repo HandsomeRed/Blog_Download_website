@@ -51,6 +51,8 @@ public class BlogAction extends ActionSupport{
 //	@Override
 //	public void setSession(Map<String, Object> session) {
 //		this.session = session;
+
+
 //
 //	}
 
