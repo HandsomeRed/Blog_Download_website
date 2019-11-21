@@ -9,6 +9,7 @@ import com.bd.entity.UserEntity;
 import com.bd.entity.BlogArticleEntity;
 import com.bd.service.BlogService;
 import com.opensymphony.xwork2.ActionSupport;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -18,6 +19,7 @@ import tool.Key_Value;
 @Controller
 public class BlogAction extends ActionSupport{
 
+    @Autowired
     private BlogService blogService; // 需注入
 
 	private BlogClassifyEntity type; // 前台需给出欲加载的文章类型
