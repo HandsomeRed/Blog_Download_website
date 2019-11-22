@@ -1,5 +1,6 @@
 package com.bd.controller;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
@@ -17,7 +18,7 @@ import tool.Key_Value;
 
 
 @Controller
-public class BlogAction extends ActionSupport{
+public class BlogAction implements Serializable {
 
     @Autowired
     private BlogService blogService; // Ðè×¢Èë

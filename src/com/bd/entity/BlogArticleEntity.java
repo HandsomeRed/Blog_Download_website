@@ -1,10 +1,13 @@
 package com.bd.entity;
 
+import com.alibaba.fastjson.JSON;
+import tool.fastjson.filter.SimpleFilter;
+
 import java.sql.Date;
 import java.util.Objects;
 import java.util.Set;
 
-public class BlogArticleEntity {
+public class BlogArticleEntity extends Entitybase {
     private int id;
     private Date releaseTime;
     private Date modificationTime;
@@ -161,4 +164,6 @@ public class BlogArticleEntity {
     public void setFavorite(Set<FavoriteBlogEntity> favorite) {
         this.favorite = favorite;
     }
+
+
 }
